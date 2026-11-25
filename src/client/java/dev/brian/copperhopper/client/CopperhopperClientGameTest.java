@@ -56,6 +56,10 @@ public class CopperhopperClientGameTest implements FabricClientGameTest {
 			expect(world.getServer().computeOnServer(server ->
 				server.overworld().getBlockEntity(COPPER_OUT.above()) instanceof HopperBlockEntity),
 				"copper hopper should have a vanilla hopper block entity");
+			expect(world.getServer().computeOnServer(server ->
+				server.overworld().getBlockEntity(COPPER_OUT.above()) instanceof HopperBlockEntity h
+					&& h.getDisplayName().getString().equals("Copper Hopper")),
+				"copper hopper menu title should be 'Copper Hopper'");
 
 			// start both lanes on the same tick
 			world.getServer().runOnServer(server -> {
