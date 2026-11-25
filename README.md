@@ -1,3 +1,5 @@
+<p align="center"><img src="src/main/resources/assets/copperhopper/icon.png" width="128" alt="icon"></p>
+
 # Copper Hopper
 
 A Fabric mod for Minecraft 26.3. Adds the **Copper Hopper**: it works exactly like a vanilla hopper
